@@ -1,5 +1,3 @@
-# Thanks @Codeflix_Bots
-
 import os
 import logging
 from logging.handlers import RotatingFileHandler
@@ -27,7 +25,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #Shortner (token system) 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com/api")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "0ec82bfb88c3907d567740e0c02dc7eb49bc56ee")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
