@@ -30,7 +30,7 @@ from shortzy import Shortzy
 
 """add time in seconds for waiting before delete 
 1 min = 60, 2 min = 60 × 2 = 120, 5 min = 60 × 5 = 300"""
-# SECONDS = int(os.getenv("SECONDS", "1200"))
+SECONDS = int(os.getenv("SECONDS", "1800"))
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
@@ -101,7 +101,7 @@ async def start_command(client: Client, message: Message):
             except:
                 pass
 
-        k = await message.reply_text("<b>❗️ <u>baka!</u> ❗️</b>\n\n<b>This video / file will be deleted in 10 minutes (Due to copyright issues).\n\n📌 Please forward this video / file to somewhere else and start downloading there.</b>")
+        k = await message.reply_text("<b>❗️ <u>baka!</u> ❗️</b>\n\n<b>This video / file will be deleted in 30 minutes (Due to copyright issues).\n\n📌 Please forward this video / file to somewhere else and start downloading there.</b>")
         await asyncio.sleep(SECONDS)
 
         for data in Codeflix:
