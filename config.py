@@ -33,7 +33,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hi <b>{first}</b>,\n I am <b>Dynamite's File Store Bot</b>! I'll provide you with all the files you need!\nVisit our channels for more content\n\nReport problems here / @BotsChats")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5904139276").split()):
+    for x in (os.environ.get("ADMINS", "5904139276 5911422304").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
