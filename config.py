@@ -23,21 +23,14 @@ PORT = os.environ.get("PORT", "8080")
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://dynamite:dynamite@cluster0.6tiejl3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
-#Shortner (token system) 
-
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "0ec82bfb88c3907d567740e0c02dc7eb49bc56ee")
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
-IS_VERIFY = os.environ.get("IS_VERIFY", "False")
-TUT_VID = os.environ.get("TUT_VID","https://t.me/How_to_Download_7x/32")
-
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001963923862"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001490431624"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hi {first}, I'm a file store bot</b>")
+START_MSG = os.environ.get("START_MESSAGE", "Hi <b>{first}</b>,\n I am <b>Dynamite's File Store Bot</b>! I'll provide you with all the files you need!\nVisit our channels for more content\n\nReport problems here / @BotsChats")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "5904139276").split()):
