@@ -152,7 +152,7 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton("Join Channel", url = client.invitelink),
+            InlineKeyboardButton("Join Channel", url = "t.me/addlist/-phwjquDiT05ZTU1"),
             InlineKeyboardButton("Join Channel", url = client.invitelink2),
         ]
     ]
